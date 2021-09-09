@@ -1,0 +1,86 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.colorRadio{
+    float: right;
+    display: flex;
+}
+
+.colorItem{
+    border: 1px solid #000;
+    width: 60px;
+    height: 40px;
+    text-align: center;
+    margin: 10px;
+    cursor: pointer;
+    background: none;
+}
+
+.formSingIn{
+    border: 2px solid #000;
+    border-radius: 10px;
+   
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    height: 380px;
+    max-width: 400px;
+    position: absolute;
+    top: calc(50% - 200px);
+    left:0;
+    right:0;
+    margin: 0 auto;
+}
+
+form{
+    text-align: center;
+}
+
+.span-1{
+    font-size: 24px;
+}
+
+.pass{
+    padding-right: 4px;
+}
+
+.inp{
+    height: 20px;
+}
+
+.btn{
+    margin-top: 20px;
+    width: 120px;
+    height: 40px;
+    border-radius: 50px;
+    border: none;
+    background-color: #000;
+    color: #fff;
+}
+
+.formWelcome{
+    display: none;
+}
+
+.formError{
+    display: none;
+}
+
+/*///////////////////////////////////////////////////////*/
+
+.darkBtnRadio{
+    border: 1px solid #fff;
+    color: #fff;
+}
+
+.darkFormSingIn{
+    border: 2px solid #fff;
+    color: #fff;
+}
+
+.darkBtn{
+    background-color: #fff;
+    color: #000;
+}
