@@ -5,14 +5,9 @@ document.getElementById('colorItem1').addEventListener('click', function(){
     document.querySelectorAll('.colorItem').forEach(elem =>{
         elem.classList.remove('darkBtnRadio')
     })
-    document.querySelector('.formSingIn').classList.remove('darkForm')
-    document.querySelectorAll('.item').forEach(item=>{
-        item.classList.remove('darkForm')
-    })
+    document.querySelector('.formSingIn').classList.remove('darkFormSingIn')
 
-    document.querySelectorAll('.btn').forEach(elem=>{
-        elem.classList.remove('darkBtn')
-    })
+    document.querySelector('.btn').classList.remove('darkBtn')
 })
 
 document.getElementById('colorItem2').addEventListener('click', function(){
@@ -20,10 +15,7 @@ document.getElementById('colorItem2').addEventListener('click', function(){
     document.querySelectorAll('.colorItem').forEach(elem =>{
         elem.classList.add('darkBtnRadio')
     })
-    document.querySelector('.formSingIn').classList.add('darkForm')
-    document.querySelectorAll('.item').forEach(item=>{
-        item.classList.add('darkForm')
-    })
+    document.querySelector('.formSingIn').classList.add('darkFormSingIn')
 
     document.querySelectorAll('.btn').forEach(elem=>{
         elem.classList.add('darkBtn')
@@ -51,10 +43,7 @@ document.querySelector('.btn').addEventListener('click', function(){
     })
 
     document.getElementById('btnGo').addEventListener('click', function(){
-        document.querySelector('.accountForm').style.display = 'none'
-        document.querySelector('.ArrayForm').style.display = 'block'
-
-        let row = document.createElement('span')
-        document.getElementById('obj').appendChild(row)
+        document.querySelector('.formActive').style.display = 'block'
+        document.querySelector('.formWelcome').style.display = 'none'
     })
 })
