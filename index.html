@@ -9,11 +9,13 @@
 </head>
 <body>
     <section class="colorRadio">
-        <button class="colorItem" id="colorItem1"><h4>Light</h4></button>
+        <div>
+            <button class="colorItem" id="colorItem1"><h4>Light</h4></button>
         <button class="colorItem" id="colorItem2"><h4>Dark</h4></button>
+        </div>
     </section>
 
-    <section class="account">
+    <section class="accountForm" >
         <div class="formSingIn">
             <form action="#" class="form">
                 <div class="formActive">
@@ -26,7 +28,7 @@
                         <input type="password" class="inp" id="inp2">
                     </div>
                     <div>
-                        <button type="button" class="btn">Sing in</button>
+                        <button type="button" class="btn" id="btnSingIn">Sing in</button>
                     </div>
                 </div>
                 <div class="formError">
@@ -49,7 +51,36 @@
         </div>
     </section>
 
-    
+    <section class="ArrayForm" >
+        <div class="container">
+            <div class="item">1</div>
+            <div class="item">
+                <h2>Entering a new object</h2>
+                <div>
+                    <span class="span-1">Object name</span>
+                    <input type="text" class="inp" id="objName">
+                </div>
+                <div>
+                    <span class="span-1">Object value</span>
+                    <input type="text" class="inp" id="objVal">
+                </div>
+                <div>
+                    <button class="btn" id="newBtnObj">Ввод</button>
+                </div>           
+            </div>
+            <div class="item">3</div>
+            <div class="item code">
+                <span>let obj = {
+                    <code id="obj"></code>
+                }
+                </span>
+                
+            
+            </div>
+        </div>
+    </section>
+
+
     <script src="js/index.js"></script>
     <script src="js/style.js"></script>
 </body>
